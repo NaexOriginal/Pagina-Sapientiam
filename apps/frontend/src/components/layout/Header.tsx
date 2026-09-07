@@ -18,8 +18,9 @@ export function Header() {
       <Link
         to="/"
         onClick={close}
-        className="flex items-center gap-3 font-mono text-xs font-bold tracking-[0.13em]"
+        className="flex items-center gap-3 font-mono text-sm font-bold tracking-[0.13em]"
       >
+        {/* placeholder: reemplazar por el ícono del semillero cuando esté listo */}
         <span className="grid h-[29px] w-[29px] place-items-center border border-lime font-serif text-lg italic text-lime">
           S
         </span>
@@ -47,19 +48,12 @@ export function Header() {
             to={item.to}
             onClick={close}
             className={({ isActive }) =>
-              `text-xs text-muted transition-colors hover:text-lime ${isActive ? 'text-lime' : ''}`
+              `text-sm text-muted transition-colors hover:text-lime ${isActive ? 'text-lime' : ''}`
             }
           >
             {item.label}
           </NavLink>
         ))}
-        <Link
-          to="/ejercicios"
-          onClick={close}
-          className="border border-line px-[15px] py-3 text-center text-xs"
-        >
-          Explorar ejercicios <span className="ml-3 text-lime">↗</span>
-        </Link>
       </div>
     </nav>
   )
