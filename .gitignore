@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.bun/
+
+# Build output
+dist/
+dist-ssr/
+build/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+bun-debug.log*
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+coverage/
+
+# Claude Code local config (skills, hooks, plugins, MCP, settings) — no subir
+.claude/
+.mcp.json
+skills-lock.json
