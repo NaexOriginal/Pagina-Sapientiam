@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "eyebrow": "Semillero de seguridad · ETITC",
+    "heading": [
+      { "text": "Aprende a" },
+      { "text": "proteger.", "emphasis": "em" },
+      { "text": "Construye con" },
+      { "text": "Sapientiam.", "emphasis": "strong" }
+    ],
+    "description": "El semillero de seguridad de la ETITC: un espacio para explorar, experimentar y aprender ciberseguridad entre estudiantes.",
+    "primaryCta": { "label": "Ver ejercicios", "to": "/ejercicios" },
+    "secondaryCta": { "label": "Conoce el semillero", "href": "#conoce" }
+  }
+}
