@@ -48,5 +48,12 @@
       { "title": "Hacking Day - Asegura tu red", "date": "2015", "image": "2015-2.webp" },
       { "title": "Hacking Day - Asegura tu red", "date": "2015", "image": "2015.webp" }
     ]
+  },
+  "practice": {
+    "sectionNumber": "03",
+    "sectionLabel": "PRÁCTICA",
+    "heading": { "line": "Empieza por", "emphasis": "lo esencial." },
+    "description": "Tres ejercicios para poner a prueba tu curiosidad y desarrollar una mirada de seguridad.",
+    "cta": { "label": "Ir a ejercicios", "to": "/ejercicios" }
   }
 }
