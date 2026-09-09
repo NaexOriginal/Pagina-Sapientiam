@@ -12,6 +12,7 @@ interface HeroContent {
   description: string
   primaryCta: { label: string; to: string }
   secondaryCta: { label: string; href: string }
+  visual: { prompt: string; note: string }
 }
 
 const hero = content.hero as HeroContent
@@ -56,8 +57,49 @@ export function Hero() {
         </div>
       </div>
 
-      {/* placeholder: parte visual (terminal simulada) pendiente de la siguiente sección */}
-      <div className="hidden lg:block" />
+      <div aria-hidden="true" className="hidden lg:block">
+        <div className="-rotate-2 border border-[#334260] bg-[#070b13] shadow-[25px_25px_0_rgba(33,18,61,0.45)]">
+          <div className="flex h-10 items-center gap-1.5 border-b border-[#26334b] px-4">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#40506a]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#40506a]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#40506a]" />
+            <small className="ml-auto font-mono text-[10px] text-[#65728a]">
+              {hero.visual.prompt}
+            </small>
+          </div>
+
+          <div className="px-8 py-7 font-mono text-sm leading-loose text-[#c6d6d1]">
+            <p>
+              <b className="inline-block w-7 font-normal text-[#43516a]">01</b>{' '}
+              <span className="text-cyan">const</span> <span className="text-lime">curiosity</span> ={' '}
+              <span className="text-purple">true</span>;
+            </p>
+            <p>
+              <b className="inline-block w-7 font-normal text-[#43516a]">02</b>{' '}
+              <span className="text-cyan">while</span> (<span className="text-lime">learning</span>) {'{'}
+            </p>
+            <p>
+              <b className="inline-block w-7 font-normal text-[#43516a]">03</b>
+              &nbsp;&nbsp;explore(<span className="text-purple">"the unknown"</span>);
+            </p>
+            <p>
+              <b className="inline-block w-7 font-normal text-[#43516a]">04</b>
+              &nbsp;&nbsp;build(<span className="text-purple">"at ETITC"</span>);
+            </p>
+            <p>
+              <b className="inline-block w-7 font-normal text-[#43516a]">05</b> {'}'}
+            </p>
+            <p>
+              <b className="inline-block w-7 font-normal text-[#43516a]">06</b>{' '}
+              <span className="inline-block h-4 w-2 animate-blink bg-lime align-middle" />
+            </p>
+          </div>
+        </div>
+
+        <span className="mt-10 block text-right font-mono text-[10px] tracking-[0.12em] text-[#65728a]">
+          {hero.visual.note}
+        </span>
+      </div>
     </section>
   )
 }
