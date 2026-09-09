@@ -14,5 +14,15 @@
       "prompt": "sapientiam@etitc:~",
       "note": "// OBSERVAR · ENTENDER · PROTEGER"
     }
+  },
+  "intro": {
+    "sectionNumber": "01",
+    "sectionLabel": "EL SEMILLERO",
+    "heading": { "line": "La seguridad se", "emphasis": "construye juntos." },
+    "paragraphs": [
+      "Sapientiam es el semillero de seguridad de la Escuela Tecnológica Instituto Técnico Central. Un punto de encuentro para estudiantes que quieren entender cómo funcionan las cosas y cómo protegerlas.",
+      "La página pública cuenta lo que hacemos; el trabajo, los retos y la comunidad viven dentro de la ETITC."
+    ],
+    "cta": { "label": "Quiénes somos", "to": "/nosotros" }
   }
 }
