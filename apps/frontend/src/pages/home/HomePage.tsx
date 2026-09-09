@@ -1,8 +1,17 @@
+import { Gallery } from './sections/Gallery'
+import { Hero } from './sections/Hero'
+import { Intro } from './sections/Intro'
+import { Practice } from './sections/Practice'
+import { Stats } from './sections/Stats'
+
 export function HomePage() {
   return (
-    <main className="mx-auto w-[calc(100%-40px)] py-20 sm:w-[min(1180px,calc(100%-72px))]">
-      <h1 className="font-serif text-4xl">Inicio</h1>
-      <p className="mt-4 text-muted">Contenido pendiente — issue #2.</p>
-    </main>
+    <>
+      <Hero />
+      <Intro />
+      <Stats />
+      <Gallery />
+      <Practice />
+    </>
   )
 }

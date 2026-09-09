@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "eyebrow": "Semillero de seguridad · ETITC",
+    "heading": [
+      { "text": "Aprende a" },
+      { "text": "proteger.", "emphasis": "em" },
+      { "text": "Construye con" },
+      { "text": "Sapientiam.", "emphasis": "strong" }
+    ],
+    "description": "El semillero de seguridad de la ETITC: un espacio para explorar, experimentar y aprender ciberseguridad entre estudiantes.",
+    "primaryCta": { "label": "Ver ejercicios", "to": "/ejercicios" },
+    "secondaryCta": { "label": "Conoce el semillero", "href": "#conoce" },
+    "visual": {
+      "prompt": "sapientiam@etitc:~",
+      "note": "// OBSERVAR · ENTENDER · PROTEGER"
+    }
+  },
+  "intro": {
+    "sectionNumber": "01",
+    "sectionLabel": "EL SEMILLERO",
+    "heading": { "line": "La seguridad se", "emphasis": "construye juntos." },
+    "paragraphs": [
+      "Sapientiam es el semillero de seguridad de la Escuela Tecnológica Instituto Técnico Central. Un punto de encuentro para estudiantes que quieren entender cómo funcionan las cosas y cómo protegerlas.",
+      "La página pública cuenta lo que hacemos; el trabajo, los retos y la comunidad viven dentro de la ETITC."
+    ],
+    "cta": { "label": "Quiénes somos", "to": "/nosotros" }
+  },
+  "stats": [
+    { "value": "03", "label": "ejercicios para comenzar" },
+    { "value": "ETITC", "label": "nuestro punto de encuentro" },
+    { "value": "∞", "label": "cosas por aprender" }
+  ],
+  "gallery": {
+    "sectionNumber": "02",
+    "sectionLabel": "MEMORIA",
+    "heading": { "line": "Galería de", "emphasis": "eventos realizados." },
+    "description": "Algunos momentos de los espacios de aprendizaje y práctica del semillero.",
+    "visibleCount": 3,
+    "events": [
+      { "title": "Hacking Day - Cloud computing", "date": "2019", "image": "2019-3.webp" },
+      { "title": "Hacking Day - Cloud computing", "date": "2019", "image": "2019-2.webp" },
+      { "title": "Hacking Day - Cloud computing", "date": "2019", "image": "2019.webp" },
+      { "title": "Hacking Day - IOT", "date": "2018", "image": "2018.webp" },
+      { "title": "Hacking Day - Social engineering", "date": "2017", "image": "2017-2.webp" },
+      { "title": "Hacking Day - Social engineering", "date": "2017", "image": "2017.webp" },
+      { "title": "Hacking Day - Analiza, protege, audita", "date": "2016", "image": "2016-2.webp" },
+      { "title": "Hacking Day - Analiza, protege, audita", "date": "2016", "image": "2016.webp" },
+      { "title": "Hacking Day - Asegura tu red", "date": "2015", "image": "2015-2.webp" },
+      { "title": "Hacking Day - Asegura tu red", "date": "2015", "image": "2015.webp" }
+    ]
+  },
+  "practice": {
+    "sectionNumber": "03",
+    "sectionLabel": "PRÁCTICA",
+    "heading": { "line": "Empieza por", "emphasis": "lo esencial." },
+    "description": "Tres ejercicios para poner a prueba tu curiosidad y desarrollar una mirada de seguridad.",
+    "cta": { "label": "Ir a ejercicios", "to": "/ejercicios" }
+  }
+}
