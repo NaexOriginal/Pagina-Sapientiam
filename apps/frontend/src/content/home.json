@@ -24,5 +24,10 @@
       "La página pública cuenta lo que hacemos; el trabajo, los retos y la comunidad viven dentro de la ETITC."
     ],
     "cta": { "label": "Quiénes somos", "to": "/nosotros" }
-  }
+  },
+  "stats": [
+    { "value": "03", "label": "ejercicios para comenzar" },
+    { "value": "ETITC", "label": "nuestro punto de encuentro" },
+    { "value": "∞", "label": "cosas por aprender" }
+  ]
 }
