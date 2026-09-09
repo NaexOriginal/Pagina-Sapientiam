@@ -29,5 +29,24 @@
     { "value": "03", "label": "ejercicios para comenzar" },
     { "value": "ETITC", "label": "nuestro punto de encuentro" },
     { "value": "∞", "label": "cosas por aprender" }
-  ]
+  ],
+  "gallery": {
+    "sectionNumber": "02",
+    "sectionLabel": "MEMORIA",
+    "heading": { "line": "Galería de", "emphasis": "eventos realizados." },
+    "description": "Algunos momentos de los espacios de aprendizaje y práctica del semillero.",
+    "visibleCount": 3,
+    "events": [
+      { "title": "Hacking Day - Cloud computing", "date": "2019", "image": "2019-3.webp" },
+      { "title": "Hacking Day - Cloud computing", "date": "2019", "image": "2019-2.webp" },
+      { "title": "Hacking Day - Cloud computing", "date": "2019", "image": "2019.webp" },
+      { "title": "Hacking Day - IOT", "date": "2018", "image": "2018.webp" },
+      { "title": "Hacking Day - Social engineering", "date": "2017", "image": "2017-2.webp" },
+      { "title": "Hacking Day - Social engineering", "date": "2017", "image": "2017.webp" },
+      { "title": "Hacking Day - Analiza, protege, audita", "date": "2016", "image": "2016-2.webp" },
+      { "title": "Hacking Day - Analiza, protege, audita", "date": "2016", "image": "2016.webp" },
+      { "title": "Hacking Day - Asegura tu red", "date": "2015", "image": "2015-2.webp" },
+      { "title": "Hacking Day - Asegura tu red", "date": "2015", "image": "2015.webp" }
+    ]
+  }
 }

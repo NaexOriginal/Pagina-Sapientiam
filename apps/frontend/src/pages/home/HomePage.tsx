@@ -1,3 +1,4 @@
+import { Gallery } from './sections/Gallery'
 import { Hero } from './sections/Hero'
 import { Intro } from './sections/Intro'
 import { Stats } from './sections/Stats'
@@ -8,6 +9,7 @@ export function HomePage() {
       <Hero />
       <Intro />
       <Stats />
+      <Gallery />
     </>
   )
 }
