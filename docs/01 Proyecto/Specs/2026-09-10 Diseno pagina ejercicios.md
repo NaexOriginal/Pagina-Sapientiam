@@ -13,6 +13,7 @@ aliases: [Diseño página ejercicios, Spec ejercicios]
 Construir `/ejercicios` (listado) y `/ejercicios/:slug` (detalle) con **3 retos básicos tipo CTF** que se resuelven solo con el navegador. Todo es frontend estático, sin backend, con el contenido en `src/content/`. Criterios del issue #4: listado y detalle funcionando, y los 3 ejercicios como contenido markdown dentro de `content/`.
 
 Decisiones: [[DEC-006 Retos en JSON y markdown con react-markdown]] · [[DEC-007 Validacion de flags por hash y flags en el vault]]
+Plan de implementación: [[2026-09-10 Plan pagina ejercicios]]
 
 ## Retos
 
@@ -22,7 +23,7 @@ Formato de flag: `SAPIENTIAM{...}`. Al validar se quitan los espacios de los ext
 |---|---|---|---|---|---|
 | 01 | `mensaje-interceptado` | CRIPTO | Mensaje interceptado | `text`: cadena Base64 copiable | Decodificar Base64 y aplicar César −3 |
 | 02 | `nada-es-lo-que-parece` | WEB | Nada es lo que parece | `hidden`: elemento con `hidden` en el DOM del reto | Inspeccionar elemento en DevTools (Ctrl+U no sirve porque es una SPA) |
-| 03 | `quien-toco-la-puerta` | DEFENSA | ¿Quién tocó la puerta? | `log`: extracto de `auth.log` (~40 líneas), visible y descargable | Encontrar la IP con varios `Failed password` seguidos de un `Accepted password`. La flag es `SAPIENTIAM{<ip>}` |
+| 03 | `quien-toco-la-puerta` | DEFENSA | ¿Quién tocó la puerta? | `log`: extracto de `auth.log` (35 líneas), visible y descargable | Encontrar la IP con varios `Failed password` seguidos de un `Accepted password`. La flag es `SAPIENTIAM{<ip>}` |
 
 Todos los retos tienen dificultad **básico** y 3 pistas progresivas. Al resolver cada uno se muestra una explicación:
 - **01:** Base64 es codificación, no cifrado. César se rompe probando 25 desplazamientos. Por eso existe AES.
