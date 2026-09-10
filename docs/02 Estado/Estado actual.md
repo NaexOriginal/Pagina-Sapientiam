@@ -16,7 +16,7 @@ responsable: Joseph
 | 2 | Página /inicio | Piedrahita | ✅ Cerrado (PR #8) |
 | 7 | Reemplazo del ícono genérico por el logo | Piedrahita | ✅ Cerrado (PR #9) |
 | 3 | Página /nosotros | Ronald | 🔴 Abierto (placeholder) |
-| 4 | Página /ejercicios (listado + `/:slug`, contenido en markdown) | Joseph | 🔴 Abierto (placeholder) |
+| 4 | Página /ejercicios (listado + `/:slug`, contenido en markdown) | Joseph | 🟡 Implementado en feature/4-pagina-ejercicios (PR pendiente) |
 | 5 | Vault de Obsidian | Joseph | 🟡 En progreso (este vault) |
 
 ## Qué funciona
@@ -27,7 +27,7 @@ responsable: Joseph
 
 ## Qué falta para la primera entrega
 - [ ] `/nosotros` con quiénes somos, historia y contacto (#3)
-- [ ] `/ejercicios`: listado de los 3 ejercicios y detalle `/ejercicios/:slug`, en markdown dentro de `content/` (#4)
+- [x] `/ejercicios`: listado de los 3 ejercicios y detalle `/ejercicios/:slug`, en markdown dentro de `content/` (#4)
 - [ ] Favicon propio (hoy es el de Vite)
 - [ ] Página 404
 - [ ] Verificar `bun run build` y `lint` en limpio antes de entregar (en `main` al 2026-09-10 ambos pasan: ver abajo)

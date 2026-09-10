@@ -11,7 +11,7 @@ actualizado: 2026-09-10
 
 ## Tareas actuales
 - [ ] #5 Vault de Obsidian: creado en `docs/`. Falta abrir el PR
-- [ ] #4 Página /ejercicios: listado + `/ejercicios/:slug`, 3 ejercicios en markdown dentro de `content/`
+- [x] #4 Página /ejercicios: listado + `/ejercicios/:slug`, 3 ejercicios en markdown dentro de `content/`
   - Crear `src/features/exercises/{api,components,types}` según [[Arquitectura actual]]
   - Decidir cómo renderizar markdown y registrarlo como DEC
   - Al terminar: actualizar el stat "03" (P-11)

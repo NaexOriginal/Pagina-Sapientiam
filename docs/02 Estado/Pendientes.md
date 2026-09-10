@@ -10,7 +10,7 @@ Agrega filas **al final** con el siguiente `P-##`. Cuando algo se termine, cambi
 
 | ID | Tarea | Responsable | Prioridad | Estado | Origen |
 |---|---|---|---|---|---|
-| P-01 | `/ejercicios`: listado + detalle `/ejercicios/:slug`, 3 ejercicios en markdown dentro de `content/`, idealmente vía `features/exercises/api`. Diseño: [[2026-09-10 Diseno pagina ejercicios]] | Joseph | alta | en progreso | #4 |
+| P-01 | `/ejercicios`: listado + detalle `/ejercicios/:slug`, 3 ejercicios en markdown dentro de `content/`, idealmente vía `features/exercises/api`. Diseño: [[2026-09-10 Diseno pagina ejercicios]] | Joseph | alta | en revisión | #4 |
 | P-02 | `/nosotros`: integrantes, historia breve, contacto, con contenido en `content/` | Ronald | alta | abierto | #3 |
 | P-03 | Vault de Obsidian + `.obsidian/` en `.gitignore` → abrir PR y cerrar #5 | Joseph | media | en progreso | #5 |
 | P-04 | Normalizar finales de línea (`.gitattributes`) | Joseph | media | hecho | [[ERR-001 Finales de linea CRLF marcan todo como modificado]] |
