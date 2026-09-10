@@ -17,5 +17,42 @@
       "label": "Mensaje interceptado",
       "value": "VkRTTEhRV0xEUHtmcmdsaWxmZHVfcXJfaHZfZmxpdWR1fQ=="
     }
+  },
+  {
+    "slug": "nada-es-lo-que-parece",
+    "number": "02",
+    "title": "Nada es lo que parece",
+    "category": "web",
+    "difficulty": "basico",
+    "summary": "Esta página esconde algo. ¿Sabes dónde mirar?",
+    "flagHash": "e0fa55158156b5e99a60c26578fb58063f32326a29fab58abb86f139e924db32",
+    "hints": [
+      "Lo que ves no es todo lo que el navegador recibió.",
+      "Prueba clic derecho → Inspeccionar (o F12). Ctrl+U no te va a servir aquí.",
+      "Busca elementos con el atributo hidden cerca del panel del reto."
+    ],
+    "artifact": {
+      "type": "hidden",
+      "value": "SAPIENTIAM{inspecciona_el_dom}"
+    }
+  },
+  {
+    "slug": "quien-toco-la-puerta",
+    "number": "03",
+    "title": "¿Quién tocó la puerta?",
+    "category": "defensa",
+    "difficulty": "basico",
+    "summary": "Alguien entró anoche al servidor SSH del laboratorio. Encuentra su rastro en el log.",
+    "flagHash": "f46ff9bcfe8bab345bc4f3e5efb79b17ba3652e5a4af15421390cab68d75d72a",
+    "hints": [
+      "Cuenta cuántos intentos fallidos (Failed password) hay por cada IP.",
+      "Una persona se equivoca una o dos veces; un programa automático, muchas más.",
+      "No basta con fallar mucho: fíjate cuál de esas IPs terminó logrando entrar (Accepted password)."
+    ],
+    "artifact": {
+      "type": "log",
+      "file": "quien-toco-la-puerta.auth.log",
+      "downloadName": "auth.log"
+    }
   }
 ]

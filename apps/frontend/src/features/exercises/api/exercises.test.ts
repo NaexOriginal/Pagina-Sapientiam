@@ -4,6 +4,14 @@ import { getExercise, getExercises } from './exercises'
 const exercises = getExercises()
 
 describe('contenido de los retos', () => {
+  it('tiene los 3 retos en orden', () => {
+    expect(exercises.map((exercise) => exercise.slug)).toEqual([
+      'mensaje-interceptado',
+      'nada-es-lo-que-parece',
+      'quien-toco-la-puerta',
+    ])
+  })
+
   it('los slugs no se repiten', () => {
     const slugs = exercises.map((exercise) => exercise.slug)
     expect(new Set(slugs).size).toBe(slugs.length)

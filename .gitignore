@@ -16,6 +16,7 @@ build/
 *.log
 npm-debug.log*
 bun-debug.log*
+!apps/frontend/src/content/exercises/*.log
 
 # Editor / OS
 .vscode/*
