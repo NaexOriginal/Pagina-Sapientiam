@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "mensaje-interceptado",
+    "number": "01",
+    "title": "Mensaje interceptado",
+    "category": "cripto",
+    "difficulty": "basico",
+    "summary": "Un mensaje extraño viajó por la red del laboratorio. ¿Qué dice en realidad?",
+    "flagHash": "a7322899f4a22b4d0b3c2332f72d66c942b3ce375c879d4bb02a64fbb2ff3ddc",
+    "hints": [
+      "¿Por qué el mensaje termina en \"==\"? Ese relleno es típico de una codificación muy común.",
+      "Lo que obtienes ya tiene forma de flag, pero las letras están corridas.",
+      "Julio César movía cada letra 3 posiciones en el alfabeto."
+    ],
+    "artifact": {
+      "type": "text",
+      "label": "Mensaje interceptado",
+      "value": "VkRTTEhRV0xEUHtmcmdsaWxmZHVfcXJfaHZfZmxpdWR1fQ=="
+    }
+  }
+]
