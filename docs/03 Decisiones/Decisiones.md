@@ -15,3 +15,5 @@ Estados: `propuesta` · `aceptada` · `reemplazada` (enlaza a la que la reemplaz
 | [[DEC-003 Tailwind v4 con tokens de tema\|DEC-003]] | Tailwind v4 con tokens en `@theme` | aceptada | 2026-09-06 |
 | [[DEC-004 Textos en JSON dentro de content\|DEC-004]] | Textos en `src/content/*.json`, no hardcodeados | aceptada | 2026-09-07 |
 | [[DEC-005 Vault de Obsidian dentro del repo\|DEC-005]] | Vault de Obsidian en `docs/`, versionado con el código | aceptada | 2026-09-10 |
+| [[DEC-006 Retos en JSON y markdown con react-markdown\|DEC-006]] | Retos en JSON + markdown, react-markdown, Vitest | aceptada | 2026-09-10 |
+| [[DEC-007 Validacion de flags por hash y flags en el vault\|DEC-007]] | Flags validadas por SHA-256 en el cliente; flags en claro en el vault | aceptada | 2026-09-10 |
