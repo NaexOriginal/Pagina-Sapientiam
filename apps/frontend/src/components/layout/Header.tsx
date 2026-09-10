@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router'
+import { NavLink } from 'react-router'
+import { Brand } from './Brand'
 
 const navItems = [
   { to: '/nosotros', label: 'Nosotros' },
@@ -15,17 +16,7 @@ export function Header() {
       aria-label="Navegación principal"
       className="mx-auto flex h-[72px] w-[calc(100%-40px)] items-center justify-between border-b border-line sm:h-[86px] sm:w-[min(1180px,calc(100%-72px))]"
     >
-      <Link
-        to="/"
-        onClick={close}
-        className="flex items-center gap-3 font-mono text-sm font-bold tracking-[0.13em]"
-      >
-        {/* placeholder: reemplazar por el ícono del semillero cuando esté listo */}
-        <span className="grid h-[29px] w-[29px] place-items-center border border-lime font-serif text-lg italic text-lime">
-          S
-        </span>
-        <span>SAPIENTIAM</span>
-      </Link>
+      <Brand onClick={close} />
 
       <button
         type="button"
