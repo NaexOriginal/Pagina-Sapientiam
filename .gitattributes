@@ -1,0 +1,12 @@
+# Finales de línea LF en el repo y en el disco, sin importar el SO (ver docs/04 Errores/ERR-001)
+* text=auto eol=lf
+
+# Binarios: nunca convertir
+*.webp binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
