@@ -1,0 +1,21 @@
+{
+  "brand": {
+    "name": "SAPIENTIAM",
+    "tagline": "Semillero de Investigación en Seguridad Informática"
+  },
+  "footer": {
+    "description": "Semillero de seguridad · ETITC",
+    "address": {
+      "label": "Calle 13 # 16 - 74. Bogotá, Colombia",
+      "mapUrl": "https://maps.app.goo.gl/s4rSjP3gP1DtBBcJ7"
+    },
+    "email": "sapientiam@itc.edu.co",
+    "social": [
+      { "label": "Facebook", "href": "https://www.facebook.com/etitc", "glyph": "f" },
+      { "label": "X / Twitter", "href": "https://x.com/etitc", "glyph": "𝕏" },
+      { "label": "YouTube", "href": "https://www.youtube.com/etitc", "glyph": "▶" },
+      { "label": "Instagram", "href": "https://www.instagram.com/etitc/", "glyph": "◎" },
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/school/escuela-tecnol%C3%B3gica-instituto-t%C3%A9cnico-central", "glyph": "in" }
+    ]
+  }
+}
