@@ -19,7 +19,7 @@ Sin backend, la flag se valida en el navegador. Además, el repo es **público**
 - El progreso se guarda en `localStorage` (sin cuentas).
 
 ## Riesgos aceptados
-- Quien lea el bundle o el repo puede ver las explicaciones, el artefacto del reto 02 y la nota de flags. Para retos de práctica no importa.
+- Quien lea el bundle o el repo puede ver las explicaciones y la nota de flags. La flag del reto 02 no está en el bundle, pero `public/api/v1/sesion.json` se puede abrir directamente por su URL (es la respuesta de red que el reto enseña a inspeccionar). Para retos de práctica no importa.
 - Cuando existan retos con puntaje (fase 3 del [[Roadmap]]), la validación **tiene que** pasar al backend y las flags **no** pueden estar en el repo.
 
 ## Alternativas descartadas

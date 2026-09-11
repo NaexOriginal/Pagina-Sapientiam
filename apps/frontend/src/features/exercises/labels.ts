@@ -8,4 +8,5 @@ export const categoryLabels: Record<Category, string> = {
 
 export const difficultyLabels: Record<Difficulty, string> = {
   basico: 'Básico',
+  intermedio: 'Intermedio',
 }

@@ -5,11 +5,12 @@ import { getExercise, getExercises } from './exercises'
 const exercises = getExercises()
 
 describe('contenido de los retos', () => {
-  it('tiene los 3 retos en orden', () => {
+  it('tiene los 4 retos en orden', () => {
     expect(exercises.map((exercise) => exercise.slug)).toEqual([
       'mensaje-interceptado',
       'nada-es-lo-que-parece',
       'quien-toco-la-puerta',
+      'alerta-desde-corea',
     ])
   })
 

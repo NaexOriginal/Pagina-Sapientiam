@@ -23,17 +23,17 @@
     "number": "02",
     "title": "Nada es lo que parece",
     "category": "web",
-    "difficulty": "basico",
-    "summary": "Esta página esconde algo. ¿Sabes dónde mirar?",
-    "flagHash": "e0fa55158156b5e99a60c26578fb58063f32326a29fab58abb86f139e924db32",
+    "difficulty": "intermedio",
+    "summary": "Esta página habla con un servidor a tus espaldas. ¿Qué se están diciendo?",
+    "flagHash": "5521d0a105ff80c180d260a61baf43d2dadc73550ff85b80a2035c650943d416",
     "hints": [
-      "Lo que ves no es todo lo que el navegador recibió.",
-      "Prueba clic derecho → Inspeccionar (o F12). Ctrl+U no te va a servir aquí.",
-      "Busca elementos con el atributo hidden cerca del panel del reto."
+      "Esta página habla con un servidor apenas carga. ¿Dónde puedes ver esa conversación?",
+      "Abre DevTools (F12) → Network y recarga la página. Revisa la respuesta (Response) de cada petición.",
+      "Un token con dos puntos (xxx.yyy.zzz) es un JWT: su parte central está en Base64URL y se puede decodificar."
     ],
     "artifact": {
-      "type": "hidden",
-      "value": "SAPIENTIAM{inspecciona_el_dom}"
+      "type": "network",
+      "requests": ["/api/v1/config.json", "/api/v1/metricas.json", "/api/v1/sesion.json"]
     }
   },
   {
@@ -42,7 +42,7 @@
     "title": "¿Quién tocó la puerta?",
     "category": "defensa",
     "difficulty": "basico",
-    "summary": "Alguien entró anoche al servidor SSH del laboratorio. Encuentra su rastro en el log.",
+    "summary": "Alguien entró anoche al servidor de nómina de la empresa. Encuentra su rastro en el log.",
     "flagHash": "f46ff9bcfe8bab345bc4f3e5efb79b17ba3652e5a4af15421390cab68d75d72a",
     "hints": [
       "Cuenta cuántos intentos fallidos (Failed password) hay por cada IP.",
@@ -53,6 +53,26 @@
       "type": "log",
       "file": "quien-toco-la-puerta.auth.log",
       "downloadName": "auth.log"
+    }
+  },
+  {
+    "slug": "alerta-desde-corea",
+    "number": "04",
+    "title": "¿Ataque desde Corea del Norte?",
+    "category": "defensa",
+    "difficulty": "intermedio",
+    "summary": "El SIEM levantó una alerta y alguien del turno ya dijo \"Corea del Norte\". ¿Tiene razón?",
+    "flagHash": "b900a79e8dc06454691baaf65f5f9facac00cadfbc5239ee27d53fdff87a56cc",
+    "hints": [
+      "Lee srccountry despacio. ¿Cómo se llama oficialmente cada una de las dos Coreas?",
+      "La IP no es de un país, es de alguien: búscala en un whois/RDAP o en VirusTotal. Fíjate también en srcinetsvc y srcregion.",
+      "Los códigos ISO son KR (República de Corea) y KP (República Popular Democrática de Corea). El dueño es la empresa que figura como registrante en el RDAP, no el país."
+    ],
+    "artifact": {
+      "type": "log",
+      "file": "alerta-desde-corea.fortigate.log",
+      "downloadName": "fortigate-traffic.log",
+      "format": "kv"
     }
   }
 ]

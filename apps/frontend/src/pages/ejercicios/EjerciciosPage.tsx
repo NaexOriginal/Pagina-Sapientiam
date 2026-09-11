@@ -28,7 +28,7 @@ export function EjerciciosPage() {
 
       <p className="mt-6 max-w-md text-[15px] leading-relaxed text-muted">{list.description}</p>
 
-      <div className="mt-12 grid gap-4 md:grid-cols-3">
+      <div className="mt-12 grid gap-4 md:grid-cols-2">
         {exercises.map((exercise) => (
           <ExerciseCard key={exercise.slug} exercise={exercise} solved={solved.includes(exercise.slug)} />
         ))}

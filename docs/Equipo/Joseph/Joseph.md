@@ -28,3 +28,4 @@ actualizado: 2026-09-10
 
 ## Bitácora
 - [[2026-09-10]]: análisis inicial y creación del vault
+- [[2026-09-11]]: cierre de #4 y rediseño del reto 02 (flag en un JWT de la pestaña Network)

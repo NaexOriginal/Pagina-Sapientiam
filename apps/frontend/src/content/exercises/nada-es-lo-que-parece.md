@@ -1,3 +1,3 @@
-Esta página parece un reto vacío... pero **lo que ves no es todo lo que el navegador recibió**.
+Esta página parece un reto vacío... pero **apenas carga, conversa con un servidor**.
 
-Encuentra la flag escondida en esta misma página. Formato: `SAPIENTIAM{...}`.
+La flag viaja en esa conversación. Encuéntrala. Formato: `SAPIENTIAM{...}`.

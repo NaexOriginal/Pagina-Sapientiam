@@ -1,8 +1,10 @@
 ## Qué aprendiste
 
-- El navegador recibe **mucho más** de lo que muestra: elementos ocultos, atributos, comentarios y scripts. Con **DevTools** (F12 o clic derecho → *Inspeccionar*) todo eso queda a la vista.
-- En una SPA como esta, *Ver código fuente* (Ctrl+U) solo muestra el `index.html` inicial, casi vacío. El contenido real lo construye JavaScript, por eso hay que inspeccionar el **DOM** ya renderizado.
+- El navegador registra cada petición que hace una página. En **DevTools → Network** (F12) ves la URL, las cabeceras y la **respuesta completa** de cada una, aunque la página no muestre nada en pantalla.
+- El `token` de la sesión es un **JWT**: tres partes en Base64URL separadas por puntos (`encabezado.payload.firma`). La firma evita que alguien lo **modifique**, pero **no oculta** nada: cualquiera puede decodificar el payload y leerlo.
 
 ## Cómo se defiende
 
-**Nunca pongas secretos en el frontend**: claves de API, contraseñas, flags o reglas de permisos. Todo lo que llega al navegador lo puede leer el usuario. Los secretos se quedan en el servidor.
+- **No pongas secretos en un JWT** ni en las respuestas de una API: envía solo lo mínimo que el cliente necesita (un identificador y sus permisos). Un campo de depuración olvidado es una fuga de datos.
+- Revisa qué devuelve cada endpoint: devolver datos de más es un riesgo frecuente (*exposición excesiva de datos*, OWASP API Security Top 10).
+- Si el contenido de un token tiene que ser confidencial, se **cifra** (JWE); firmarlo no basta.

@@ -1,11 +1,11 @@
 export type Category = 'cripto' | 'web' | 'defensa'
 
-export type Difficulty = 'basico'
+export type Difficulty = 'basico' | 'intermedio'
 
 export type Artifact =
   | { type: 'text'; label: string; value: string }
-  | { type: 'hidden'; value: string }
-  | { type: 'log'; file: string; downloadName: string }
+  | { type: 'network'; requests: string[] }
+  | { type: 'log'; file: string; downloadName: string; format?: 'kv' }
 
 export interface ExerciseMeta {
   slug: string
