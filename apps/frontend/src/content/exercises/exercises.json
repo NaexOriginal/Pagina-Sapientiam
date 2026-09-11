@@ -8,9 +8,9 @@
     "summary": "Un mensaje extraño viajó por la red del laboratorio. ¿Qué dice en realidad?",
     "flagHash": "a7322899f4a22b4d0b3c2332f72d66c942b3ce375c879d4bb02a64fbb2ff3ddc",
     "hints": [
-      "¿Por qué el mensaje termina en \"==\"? Ese relleno es típico de una codificación muy común.",
-      "Lo que obtienes ya tiene forma de flag, pero las letras están corridas.",
-      "Julio César movía cada letra 3 posiciones en el alfabeto."
+      "wr9Qb3IgcXXDqSBlbCBtZW5zYWplIHRlcm1pbmEgZW4gIj09Ij8gRXNlIHJlbGxlbm8gZXMgdMOtcGljbyBkZSB1bmEgY29kaWZpY2FjacOzbiBtdXkgY29tw7puLg==",
+      "TG8gcXVlIG9idGllbmVzIHlhIHRpZW5lIGZvcm1hIGRlIGZsYWcsIHBlcm8gbGFzIGxldHJhcyBlc3TDoW4gY29ycmlkYXMu",
+      "SnVsaW8gQ8Opc2FyIG1vdsOtYSBjYWRhIGxldHJhIDMgcG9zaWNpb25lcyBlbiBlbCBhbGZhYmV0by4="
     ],
     "artifact": {
       "type": "text",
@@ -27,9 +27,9 @@
     "summary": "Esta página habla con un servidor a tus espaldas. ¿Qué se están diciendo?",
     "flagHash": "5521d0a105ff80c180d260a61baf43d2dadc73550ff85b80a2035c650943d416",
     "hints": [
-      "Esta página habla con un servidor apenas carga. ¿Dónde puedes ver esa conversación?",
-      "Abre DevTools (F12) → Network y recarga la página. Revisa la respuesta (Response) de cada petición.",
-      "Un token con dos puntos (xxx.yyy.zzz) es un JWT: su parte central está en Base64URL y se puede decodificar."
+      "RXN0YSBww6FnaW5hIGhhYmxhIGNvbiB1biBzZXJ2aWRvciBhcGVuYXMgY2FyZ2EuIMK/RMOzbmRlIHB1ZWRlcyB2ZXIgZXNhIGNvbnZlcnNhY2nDs24/",
+      "QWJyZSBEZXZUb29scyAoRjEyKSDihpIgTmV0d29yayB5IHJlY2FyZ2EgbGEgcMOhZ2luYS4gUmV2aXNhIGxhIHJlc3B1ZXN0YSAoUmVzcG9uc2UpIGRlIGNhZGEgcGV0aWNpw7NuLg==",
+      "VW4gdG9rZW4gY29uIGRvcyBwdW50b3MgKHh4eC55eXkuenp6KSBlcyB1biBKV1Q6IHN1IHBhcnRlIGNlbnRyYWwgZXN0w6EgZW4gQmFzZTY0VVJMIHkgc2UgcHVlZGUgZGVjb2RpZmljYXIu"
     ],
     "artifact": {
       "type": "network",
@@ -45,9 +45,9 @@
     "summary": "Alguien entró anoche al servidor de nómina de la empresa. Encuentra su rastro en el log.",
     "flagHash": "f46ff9bcfe8bab345bc4f3e5efb79b17ba3652e5a4af15421390cab68d75d72a",
     "hints": [
-      "Cuenta cuántos intentos fallidos (Failed password) hay por cada IP.",
-      "Una persona se equivoca una o dos veces; un programa automático, muchas más.",
-      "No basta con fallar mucho: fíjate cuál de esas IPs terminó logrando entrar (Accepted password)."
+      "Q3VlbnRhIGN1w6FudG9zIGludGVudG9zIGZhbGxpZG9zIChGYWlsZWQgcGFzc3dvcmQpIGhheSBwb3IgY2FkYSBJUC4=",
+      "VW5hIHBlcnNvbmEgc2UgZXF1aXZvY2EgdW5hIG8gZG9zIHZlY2VzOyB1biBwcm9ncmFtYSBhdXRvbcOhdGljbywgbXVjaGFzIG3DoXMu",
+      "Tm8gYmFzdGEgY29uIGZhbGxhciBtdWNobzogZsOtamF0ZSBjdcOhbCBkZSBlc2FzIElQcyB0ZXJtaW7DsyBsb2dyYW5kbyBlbnRyYXIgKEFjY2VwdGVkIHBhc3N3b3JkKS4="
     ],
     "artifact": {
       "type": "log",
@@ -64,9 +64,9 @@
     "summary": "El SIEM levantó una alerta y alguien del turno ya dijo \"Corea del Norte\". ¿Tiene razón?",
     "flagHash": "b900a79e8dc06454691baaf65f5f9facac00cadfbc5239ee27d53fdff87a56cc",
     "hints": [
-      "Lee srccountry despacio. ¿Cómo se llama oficialmente cada una de las dos Coreas?",
-      "La IP no es de un país, es de alguien: búscala en un whois/RDAP o en VirusTotal. Fíjate también en srcinetsvc y srcregion.",
-      "Los códigos ISO son KR (República de Corea) y KP (República Popular Democrática de Corea). El dueño es la empresa que figura como registrante en el RDAP, no el país."
+      "TGVlIHNyY2NvdW50cnkgZGVzcGFjaW8uIMK/Q8OzbW8gc2UgbGxhbWEgb2ZpY2lhbG1lbnRlIGNhZGEgdW5hIGRlIGxhcyBkb3MgQ29yZWFzPw==",
+      "TGEgSVAgbm8gZXMgZGUgdW4gcGHDrXMsIGVzIGRlIGFsZ3VpZW46IGLDunNjYWxhIGVuIHVuIHdob2lzL1JEQVAgbyBlbiBWaXJ1c1RvdGFsLiBGw61qYXRlIHRhbWJpw6luIGVuIHNyY2luZXRzdmMgeSBzcmNyZWdpb24u",
+      "TG9zIGPDs2RpZ29zIElTTyBzb24gS1IgKFJlcMO6YmxpY2EgZGUgQ29yZWEpIHkgS1AgKFJlcMO6YmxpY2EgUG9wdWxhciBEZW1vY3LDoXRpY2EgZGUgQ29yZWEpLiBFbCBkdWXDsW8gZXMgbGEgZW1wcmVzYSBxdWUgZmlndXJhIGNvbW8gcmVnaXN0cmFudGUgZW4gZWwgUkRBUCwgbm8gZWwgcGHDrXMu"
     ],
     "artifact": {
       "type": "log",
