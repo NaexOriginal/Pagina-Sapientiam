@@ -1,6 +1,6 @@
 ---
 tipo: estado
-actualizado: 2026-09-10
+actualizado: 2026-09-11
 responsable: Joseph
 ---
 
@@ -24,6 +24,7 @@ responsable: Joseph
 - `/` completa: Hero, Intro, Stats, Galería (carrusel de 10 fotos) y Práctica.
 - Textos centralizados en `src/content/*.json`.
 - Logo oficial en Header y Footer.
+- `/ejercicios` con 3 retos tipo CTF (cripto, web, defensa), pistas, validación por hash y progreso en el navegador — en la rama feature/4-pagina-ejercicios, PR pendiente.
 
 ## Qué falta para la primera entrega
 - [ ] `/nosotros` con quiénes somos, historia y contacto (#3)
@@ -31,10 +32,11 @@ responsable: Joseph
 - [ ] Favicon propio (hoy es el de Vite)
 - [ ] Página 404
 - [ ] Verificar `bun run build` y `lint` en limpio antes de entregar (en `main` al 2026-09-10 ambos pasan: ver abajo)
+- [ ] Revisión visual de /ejercicios en el navegador (8 puntos del plan, escritorio y móvil) antes de abrir el PR de #4
 
 ## Salud del repo
 - Historial limpio y lineal por PR. Todo lo mergeado hasta hoy es de Piedrahita.
-- No hay tests, CI ni README en la raíz.
+- Hay pruebas con Vitest (30) desde #4; aún no hay CI ni README en la raíz.
 - ✅ Finales de línea normalizados con `.gitattributes` (pendiente de llegar a `main`). Ver [[ERR-001 Finales de linea CRLF marcan todo como modificado]].
 - ✅ Build y lint verificados sobre `0f242a4` (2026-09-10, Bun 1.4.2 + Node v24.21.0). `bun run lint` pasa con Node, y sin Node pasa `bun run --bun lint`:
   - `bun run build`: OK, 1932 módulos. JS 302 KB (95 KB gzip), CSS 18 KB (4.5 KB gzip).

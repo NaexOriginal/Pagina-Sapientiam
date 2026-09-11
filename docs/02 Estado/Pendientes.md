@@ -25,3 +25,5 @@ Agrega filas **al final** con el siguiente `P-##`. Cuando algo se termine, cambi
 | P-13 | CI con GitHub Actions: lint + build en cada PR | sin asignar | baja | abierto | ARCHITECTURE.md |
 | P-14 | Definir hosting (VPS vs PaaS) y fallback SPA (rewrite a `index.html`) | todos | baja | abierto | ARCHITECTURE.md |
 | P-15 | Confirmar el usuario de GitHub de Ronald (¿`solutionsdevelopm-byte`?) | Ronald | baja | abierto | [[Equipo]] |
+| P-16 | Cargar en diferido (`lazy`) la ruta `/ejercicios/:slug`: react-markdown sube el bundle a ~480 kB (149 kB gzip), cerca del aviso de 500 kB de Vite | sin asignar | baja | abierto | Revisión final #4 |
+| P-17 | Al llegar el backend: `getExercises` síncrono y `checkFlag` en el cliente obligan a tocar páginas y `FlagForm` (carga async, validación en servidor); evaluar un loader de ruta | sin asignar | baja | abierto | Revisión final #4 |

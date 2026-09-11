@@ -1,6 +1,6 @@
 ---
 tipo: proyecto
-actualizado: 2026-09-10
+actualizado: 2026-09-11
 fuente: ARCHITECTURE.md + revisión del código
 ---
 
@@ -18,10 +18,10 @@ El documento de diseño completo está en `ARCHITECTURE.md`, en la raíz del rep
 | Estilos | Tailwind CSS | ✅ Tailwind v4 vía `@tailwindcss/vite`, tokens en `@theme` |
 | Lint | Biome (sugerido) | **oxlint** (`.oxlintrc.json`) |
 | `src/app/` | `router.tsx` + `providers.tsx` | Solo `router.tsx` (todavía no hay providers) |
-| `src/features/<dominio>/api` | Único lugar que sabe de dónde vienen los datos | ❌ No existe. Las secciones importan el JSON directo |
+| `src/features/<dominio>/api` | Único lugar que sabe de dónde vienen los datos | ✅ `src/features/exercises/api/exercises.ts` (único módulo que lee `content/exercises/`) |
 | `src/lib/` | Utilidades | ❌ No existe |
-| `src/content/` | Info + ejercicios (MD/JSON) | ✅ `home.json`, `site.json`. Aún no hay ejercicios |
-| Testing | Vitest + RTL (futuro) | Nada |
+| `src/content/` | Info + ejercicios (MD/JSON) | ✅ `home.json`, `site.json`, `ejercicios.json` (copy de páginas) y `exercises/` (datos, `.md` y `.log` de los 3 retos) |
+| Testing | Vitest + RTL (futuro) | Vitest 5 (30 pruebas de lógica; sin tests de UI) |
 | CI | Lint + build en PRs (futuro) | Nada |
 | Backend | NestJS hexagonal (fase futura) | Nada (esperado) |
 
@@ -36,7 +36,8 @@ index.html → main.tsx → RouterProvider(router)
                          └─ Layout (Header + <Outlet/> + Footer)
                               ├─ /           → HomePage (Hero, Intro, Stats, Gallery, Practice)
                               ├─ /nosotros   → NosotrosPage (placeholder)
-                              └─ /ejercicios → EjerciciosPage (placeholder)
+                              ├─ /ejercicios → EjerciciosPage (listado)
+                              └─ /ejercicios/:slug → EjercicioPage (detalle)
 ```
 
 Detalle archivo por archivo en [[Mapa del codigo]]. Discrepancias pendientes en [[Deuda tecnica]].
