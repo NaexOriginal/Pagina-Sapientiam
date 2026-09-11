@@ -9,7 +9,7 @@ export function Hints({ hints }: { hints: string[] }) {
       <h2 className="font-mono text-[11px] tracking-[0.12em] text-lime">
         PISTAS · {revealed}/{hints.length}
       </h2>
-      <ol className="flex flex-col gap-2">
+      <ol aria-live="polite" className="flex flex-col gap-2">
         {hints.map((hint, index) => (
           <li key={hint} className="border border-line bg-panel p-4 text-sm">
             {index < revealed && (

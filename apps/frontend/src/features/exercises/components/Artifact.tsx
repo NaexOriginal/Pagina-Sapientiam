@@ -64,7 +64,7 @@ function LogArtifact({ content, downloadName }: { content: string; downloadName:
           <Download size={14} aria-hidden="true" /> Descargar
         </a>
       </div>
-      <pre className="max-h-80 overflow-auto p-4 font-mono text-[11px] leading-relaxed whitespace-pre text-foreground">
+      <pre tabIndex={0} className="max-h-80 overflow-auto p-4 font-mono text-[11px] leading-relaxed whitespace-pre text-foreground">
         {content}
       </pre>
     </div>

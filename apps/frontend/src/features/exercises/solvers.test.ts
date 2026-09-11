@@ -52,7 +52,7 @@ describe('los retos se pueden resolver', () => {
 
   it('03 usa solo IPs de documentación (RFC 5737)', () => {
     const log = getExercise('quien-toco-la-puerta')?.artifactContent ?? ''
-    const ips = [...log.matchAll(/from (\d+\.\d+\.\d+\.\d+)/g)].map((match) => match[1])
+    const ips = [...log.matchAll(/\b(\d{1,3}(?:\.\d{1,3}){3})\b/g)].map((match) => match[1])
     expect(ips.length).toBeGreaterThan(0)
     for (const ip of ips) expect(ip).toMatch(/^(192\.0\.2|198\.51\.100|203\.0\.113)\.\d{1,3}$/)
   })

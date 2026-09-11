@@ -26,9 +26,13 @@ export function FlagForm({ flagHash, alreadySolved, onSolved }: FlagFormProps) {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setStatus('checking')
-    const correct = await checkFlag(value, flagHash)
-    setStatus(correct ? 'correct' : 'wrong')
-    if (correct) onSolved()
+    try {
+      const correct = await checkFlag(value, flagHash)
+      setStatus(correct ? 'correct' : 'wrong')
+      if (correct) onSolved()
+    } catch {
+      setStatus('wrong')
+    }
   }
 
   return (

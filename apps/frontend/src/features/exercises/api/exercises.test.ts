@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { categoryLabels, difficultyLabels } from '../labels'
 import { getExercise, getExercises } from './exercises'
 
 const exercises = getExercises()
@@ -22,6 +23,9 @@ describe('contenido de los retos', () => {
     expect(exercise.explanation.trim()).not.toBe('')
     expect(exercise.flagHash).toMatch(/^[0-9a-f]{64}$/)
     expect(exercise.hints).toHaveLength(3)
+    expect(new Set(exercise.hints).size).toBe(exercise.hints.length)
+    expect(Object.keys(categoryLabels)).toContain(exercise.category)
+    expect(Object.keys(difficultyLabels)).toContain(exercise.difficulty)
     if (exercise.artifact.type === 'log') expect(exercise.artifactContent?.trim()).toBeTruthy()
   })
 })
