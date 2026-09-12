@@ -1,0 +1,47 @@
+{
+  "intro": {
+    "sectionNumber": "01",
+    "sectionLabel": "EL SEMILLERO",
+    "heading": { "line": "Quiénes somos y", "emphasis": "qué nos mueve." },
+    "paragraphs": [
+      "Sapientiam es el Semillero de Investigación en Seguridad Informática de la Escuela Tecnológica Instituto Técnico Central (ETITC), en Bogotá.",
+      "Nos reunimos por curiosidad: entender cómo funcionan los sistemas, encontrar sus fallas y aprender a protegerlos, siempre dentro de un marco ético y responsable."
+    ]
+  },
+  "history": {
+    "sectionNumber": "02",
+    "sectionLabel": "HISTORIA",
+    "heading": { "line": "Una historia que se", "emphasis": "escribe en comunidad." },
+    "paragraphs": [
+      "Desde 2015 organizamos los Hacking Day: jornadas prácticas donde los estudiantes ponen a prueba redes, aplicaciones, dispositivos IoT e ingeniería social en entornos controlados.",
+      "Con los años, el semillero se ha consolidado como el espacio de la ETITC para explorar ciberseguridad fuera del aula, con talleres y retos organizados por los mismos estudiantes."
+    ]
+  },
+  "team": {
+    "sectionNumber": "03",
+    "sectionLabel": "EQUIPO",
+    "heading": { "line": "Conformado por", "emphasis": "quienes preguntan más." },
+    "description": "El semillero lo conforman estudiantes de distintos semestres y docentes que acompañan el proceso, organizados alrededor de tres roles.",
+    "roles": [
+      {
+        "title": "Semilleristas",
+        "description": "Estudiantes activos que investigan, practican y organizan los espacios de aprendizaje del semillero."
+      },
+      {
+        "title": "Mentores",
+        "description": "Docentes y semilleristas con más trayectoria que guían los retos y validan el contenido técnico."
+      },
+      {
+        "title": "Comunidad",
+        "description": "Estudiantes de la ETITC que participan en los Hacking Day y demás actividades abiertas."
+      }
+    ]
+  },
+  "contact": {
+    "sectionNumber": "04",
+    "sectionLabel": "CONTACTO",
+    "heading": { "line": "Hablemos de", "emphasis": "seguridad." },
+    "description": "¿Quieres unirte, proponer un tema o invitarnos a un espacio? Escríbenos.",
+    "cta": { "label": "Escríbenos" }
+  }
+}
