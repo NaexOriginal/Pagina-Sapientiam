@@ -26,7 +26,7 @@
     "cta": { "label": "Quiénes somos", "to": "/nosotros" }
   },
   "stats": [
-    { "value": "03", "label": "ejercicios para comenzar" },
+    { "value": "04", "label": "ejercicios para comenzar" },
     { "value": "ETITC", "label": "nuestro punto de encuentro" },
     { "value": "∞", "label": "cosas por aprender" }
   ],
@@ -53,7 +53,7 @@
     "sectionNumber": "03",
     "sectionLabel": "PRÁCTICA",
     "heading": { "line": "Empieza por", "emphasis": "lo esencial." },
-    "description": "Tres ejercicios para poner a prueba tu curiosidad y desarrollar una mirada de seguridad.",
+    "description": "Cuatro ejercicios para poner a prueba tu curiosidad y desarrollar una mirada de seguridad.",
     "cta": { "label": "Ir a ejercicios", "to": "/ejercicios" }
   }
 }

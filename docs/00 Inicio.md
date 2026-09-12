@@ -33,6 +33,7 @@ Acá registramos avances, cambios, decisiones, pendientes, errores y actas. El c
 - 🗺️ [[Roadmap]]: fases del proyecto
 - 🏗️ [[Arquitectura actual]] · [[Mapa del codigo]] · [[Stack y comandos]]
 - 🔀 [[Flujo de trabajo]]: ramas, issues, PRs y reglas del vault
+- 🧩 [[Guia crear un reto]]: paso a paso para agregar un reto nuevo a `/ejercicios`
 
 ## Reglas básicas (para no pisarnos en git)
 

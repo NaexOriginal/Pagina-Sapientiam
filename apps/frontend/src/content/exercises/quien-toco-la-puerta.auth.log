@@ -1,0 +1,35 @@
+Sep  9 01:58:12 srv-nomina-01 sshd[2101]: Accepted publickey for mgarcia from 192.0.2.10 port 50412 ssh2: ED25519 SHA256:q3Vx8mW2cKp1LzT9sRf0bN7yHd4gJa6uE5oYiXvC2kM
+Sep  9 01:58:12 srv-nomina-01 sshd[2101]: pam_unix(sshd:session): session opened for user mgarcia(uid=1001) by (uid=0)
+Sep  9 02:03:47 srv-nomina-01 sshd[2130]: Failed password for lrojas from 192.0.2.34 port 51022 ssh2
+Sep  9 02:03:55 srv-nomina-01 sshd[2130]: Accepted password for lrojas from 192.0.2.34 port 51022 ssh2
+Sep  9 02:03:55 srv-nomina-01 sshd[2130]: pam_unix(sshd:session): session opened for user lrojas(uid=1002) by (uid=0)
+Sep  9 02:11:02 srv-nomina-01 sshd[2177]: Failed password for invalid user admin from 198.51.100.23 port 40022 ssh2
+Sep  9 02:11:05 srv-nomina-01 sshd[2177]: Failed password for invalid user admin from 198.51.100.23 port 40022 ssh2
+Sep  9 02:11:07 srv-nomina-01 sshd[2177]: Connection closed by invalid user admin 198.51.100.23 port 40022 [preauth]
+Sep  9 02:14:31 srv-nomina-01 sshd[2203]: Failed password for root from 203.0.113.47 port 55110 ssh2
+Sep  9 02:14:33 srv-nomina-01 sshd[2203]: Failed password for root from 203.0.113.47 port 55110 ssh2
+Sep  9 02:14:36 srv-nomina-01 sshd[2203]: Failed password for root from 203.0.113.47 port 55110 ssh2
+Sep  9 02:14:39 srv-nomina-01 sshd[2205]: Failed password for invalid user admin from 203.0.113.47 port 55124 ssh2
+Sep  9 02:14:41 srv-nomina-01 sshd[2205]: Failed password for invalid user admin from 203.0.113.47 port 55124 ssh2
+Sep  9 02:14:44 srv-nomina-01 sshd[2207]: Failed password for invalid user test from 203.0.113.47 port 55131 ssh2
+Sep  9 02:14:46 srv-nomina-01 sshd[2207]: Failed password for invalid user test from 203.0.113.47 port 55131 ssh2
+Sep  9 02:14:49 srv-nomina-01 sshd[2209]: Failed password for invalid user ubuntu from 203.0.113.47 port 55140 ssh2
+Sep  9 02:14:52 srv-nomina-01 sshd[2211]: Failed password for invalid user pi from 203.0.113.47 port 55147 ssh2
+Sep  9 02:15:10 srv-nomina-01 sshd[2215]: Accepted publickey for dtorres from 192.0.2.11 port 50430 ssh2: ED25519 SHA256:Zt7pL2wQx9Vn4cRk8mJs1bH6yFd3gTa0uE5oYiXvK2Q
+Sep  9 02:15:10 srv-nomina-01 sshd[2215]: pam_unix(sshd:session): session opened for user dtorres(uid=1003) by (uid=0)
+Sep  9 02:15:18 srv-nomina-01 sshd[2219]: Failed password for root from 203.0.113.47 port 55162 ssh2
+Sep  9 02:15:21 srv-nomina-01 sshd[2219]: Failed password for root from 203.0.113.47 port 55162 ssh2
+Sep  9 02:15:24 srv-nomina-01 sshd[2219]: Failed password for root from 203.0.113.47 port 55162 ssh2
+Sep  9 02:15:29 srv-nomina-01 sshd[2223]: Failed password for invalid user oracle from 198.51.100.88 port 33510 ssh2
+Sep  9 02:15:34 srv-nomina-01 sshd[2223]: Connection closed by invalid user oracle 198.51.100.88 port 33510 [preauth]
+Sep  9 02:15:40 srv-nomina-01 sshd[2226]: Failed password for root from 203.0.113.47 port 55177 ssh2
+Sep  9 02:15:43 srv-nomina-01 sshd[2226]: Failed password for root from 203.0.113.47 port 55177 ssh2
+Sep  9 02:15:47 srv-nomina-01 sshd[2226]: Accepted password for root from 203.0.113.47 port 55177 ssh2
+Sep  9 02:15:47 srv-nomina-01 sshd[2226]: pam_unix(sshd:session): session opened for user root(uid=0) by (uid=0)
+Sep  9 02:16:05 srv-nomina-01 sshd[2226]: Received disconnect from 203.0.113.47 port 55177:11: disconnected by user
+Sep  9 02:16:05 srv-nomina-01 sshd[2226]: pam_unix(sshd:session): session closed for user root
+Sep  9 02:20:13 srv-nomina-01 sshd[2240]: Failed password for invalid user git from 203.0.113.99 port 60001 ssh2
+Sep  9 02:20:16 srv-nomina-01 sshd[2240]: Connection closed by invalid user git 203.0.113.99 port 60001 [preauth]
+Sep  9 02:31:44 srv-nomina-01 sshd[2101]: pam_unix(sshd:session): session closed for user mgarcia
+Sep  9 02:47:02 srv-nomina-01 sshd[2130]: pam_unix(sshd:session): session closed for user lrojas
+Sep  9 03:02:19 srv-nomina-01 sshd[2215]: pam_unix(sshd:session): session closed for user dtorres

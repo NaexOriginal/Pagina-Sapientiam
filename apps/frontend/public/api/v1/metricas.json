@@ -1,0 +1,9 @@
+{
+  "visitas_hoy": 128,
+  "retos_resueltos": 342,
+  "latencia_ms": 87,
+  "servidores": [
+    { "nombre": "lab-01", "estado": "ok" },
+    { "nombre": "lab-02", "estado": "ok" }
+  ]
+}

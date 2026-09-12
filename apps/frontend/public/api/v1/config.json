@@ -1,0 +1,7 @@
+{
+  "app": "sapientiam-lab",
+  "version": "2.3.1",
+  "entorno": "produccion",
+  "funciones": { "retos": true, "ranking": false, "ctf": false },
+  "soporte": "sapientiam@itc.edu.co"
+}
