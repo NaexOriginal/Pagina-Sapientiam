@@ -120,9 +120,9 @@ Agrégala **al final** del array; el orden del archivo es el orden del listado. 
     "summary": "<Una línea para la tarjeta>",
     "flagHash": "<64 caracteres del paso 5>",
     "hints": [
-      "<Pista 1: la más vaga>",
-      "<Pista 2: señala dónde mirar>",
-      "<Pista 3: casi el método, sin la respuesta>"
+      "<Pista 1 en Base64: la más vaga>",
+      "<Pista 2 en Base64: señala dónde mirar>",
+      "<Pista 3 en Base64: casi el método, sin la respuesta>"
     ],
     "artifact": { "type": "text", "label": "<Nombre del material>", "value": "<contenido>" }
   }
@@ -135,6 +135,14 @@ Formas del campo `artifact` según el tipo:
 { "type": "log", "file": "<archivo>.log", "downloadName": "firewall.log", "format": "kv" }
 ```
 Deben ser **exactamente 3 pistas** y distintas entre sí (lo verifica una prueba).
+
+**Las pistas van codificadas en Base64**, para que no se puedan leer en el código del sitio antes de tiempo. Escríbelas en claro y codifica cada una así:
+```bash
+printf '%s' 'Lee srccountry despacio. ¿Cómo se llama oficialmente cada una de las dos Coreas?' | base64 -w0
+```
+Pega el resultado entre comillas en `hints`. La página las decodifica solo al revelarlas. Para leer una pista ya codificada: `printf '%s' '<base64>' | base64 -d`.
+
+**Temporizador:** cada pista se desbloquea sola tras una espera, contada desde que se abre el reto (pista 1) o desde la pista anterior (2 y 3): **2, 4 y 6 minutos** (`HINT_DELAYS_MS` en `features/exercises/lib/hintTimer.ts`). Escribe las pistas pensando en eso: la primera llega a quien ya lo intentó un rato, no a quien acaba de entrar.
 
 ### Paso 7. Categoría o dificultad nueva (solo si hace falta)
 Agrégala al tipo en `apps/frontend/src/features/exercises/types.ts` y su etiqueta en `labels.ts`:
@@ -214,6 +222,7 @@ Abre el PR hacia `main` con `Closes #<issue>`. Sigue el formato de [[Flujo de tr
 - [ ] `<slug>.md` y `<slug>.explicacion.md`, sin la flag
 - [ ] Archivos del artefacto en su lugar (`content/exercises/` o `public/`)
 - [ ] Hash calculado con `printf '%s' … | sha256sum`
+- [ ] Las 3 pistas codificadas con `printf '%s' … | base64 -w0`
 - [ ] Entrada al final de `exercises.json`
 - [ ] Tipo y etiqueta nuevos (solo si hacía falta)
 - [ ] Prueba solver y lista de slugs en `exercises.test.ts`
@@ -226,7 +235,7 @@ Abre el PR hacia `main` con `Closes #<issue>`. Sigue el formato de [[Flujo de tr
 | Síntoma | Causa probable |
 |---|---|
 | La prueba solver falla aunque la flag es correcta | Hash calculado con `echo` (salto de línea extra) o con otra mayúscula/minúscula |
-| Falla "tiene enunciado, explicación, hash y 3 pistas" | El nombre del `.md` no coincide con el slug, hay 2 o 4 pistas, o hay dos pistas iguales |
+| Falla "tiene enunciado, explicación, hash y 3 pistas codificadas" | El nombre del `.md` no coincide con el slug, hay 2 o 4 pistas, hay dos pistas iguales, o alguna pista quedó en claro (sin codificar en Base64) |
 | Falla "tiene los N retos en orden" | Falta agregar el slug nuevo a la lista de `exercises.test.ts` |
 | El `.log` no aparece en `git status` | Está fuera de `apps/frontend/src/content/exercises/`, donde el `.gitignore` lo ignora |
 | El panel del reto dice "No se pudo cargar la sesión" | La ruta en `requests` no empieza con `/`, o el archivo no está en `public/` con ese nombre exacto |

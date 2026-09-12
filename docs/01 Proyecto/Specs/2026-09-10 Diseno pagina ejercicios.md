@@ -121,7 +121,7 @@ El markdown **no** usa `@tailwindcss/typography`: `Markdown.tsx` asigna clases T
 1. Encabezado: número, categoría, dificultad y título.
 2. Enunciado en markdown.
 3. Artefacto.
-4. Pistas: botón "Ver pista N". Solo se puede abrir la siguiente pista y quedan abiertas mientras estés en la página (no se guardan).
+4. Pistas: botón "Ver pista N". Solo se puede abrir la siguiente pista y quedan abiertas mientras estés en la página (no se guardan). **Desde el 2026-09-11 (PR 4.1) tienen temporizador:** la pista 1 se habilita 2 min después de abrir el reto, la 2 a los 4 min de ver la 1 y la 3 a los 6 min de ver la 2. Mientras tanto se ve "Pista N disponible en m:ss" y no hay botón. El reloj es `performance.now()` (no cambia con la hora del sistema), la función que revela vuelve a comprobar el tiempo, y al recargar todo vuelve a cero. Las pistas van en Base64 en `exercises.json` y se decodifican solo al revelarlas. Sin backend no es un bloqueo absoluto: evita saltarse el tiempo haciendo clic, recargando, cambiando la hora o buscando el texto en el código.
 5. Formulario de la flag:
    - el botón queda deshabilitado si el campo está vacío;
    - mientras calcula el hash muestra "validando…";
@@ -145,6 +145,7 @@ El markdown **no** usa `@tailwindcss/typography`: `Markdown.tsx` asigna clases T
 - `sha256`: vectores conocidos (`""` y `"abc"`). La ruta de respaldo y la de `crypto.subtle` dan el mismo resultado.
 - `checkFlag`: acepta con espacios en los extremos y rechaza si cambian las mayúsculas.
 - `progress`: guarda y lee, ignora duplicados, y no falla si localStorage lanza error.
+- `hintTimer`: tiempos 2/4/6 min, cuenta desde la apertura o la pista anterior, bloquea antes de tiempo y no revela más allá del total. `hintCodec`: Base64 con UTF-8 (tildes, `¿`, `→`) y error si el texto no es Base64.
 - **Pruebas solver:** cada una resuelve su reto **a partir del contenido** y comprueba que el SHA-256 coincida con `flagHash`:
   - 01: `atob` y César −3;
   - 02: lee los JSON de `public/api/v1/`, toma el único `token`, decodifica el payload del JWT y busca el valor con formato de flag; además comprueba que ninguna flag quede en el contenido que va al bundle;
