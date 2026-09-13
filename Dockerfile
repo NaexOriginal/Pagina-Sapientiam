@@ -1,5 +1,5 @@
 # Build stage
-FROM node:24-alpine AS builder
+FROM oven/bun:latest AS builder
 
 WORKDIR /app
 
@@ -7,13 +7,13 @@ WORKDIR /app
 COPY apps/frontend/package.json apps/frontend/bun.lock ./
 
 # Install dependencies
-RUN npm ci
+RUN bun install
 
 # Copy source
 COPY apps/frontend/ .
 
 # Build
-RUN npm run build
+RUN bun run build
 
 # Runtime stage
 FROM nginx:alpine
